@@ -5,8 +5,8 @@
 ### 🔄 Active Tasks
 
 - [x] Set up Next.js 15 project with TypeScript (Date: 2025-07-27)
-- [ ] Configure Tailwind CSS and PostCSS
-- [ ] Install and configure shadcn/ui components
+- [x] Configure Tailwind CSS and PostCSS (Date: 2025-07-27)
+- [x] Install and configure shadcn/ui components (Date: 2025-07-27)
 - [ ] Set up Prisma with PostgreSQL schema
 - [ ] Configure NextAuth.js with database sessions
 - [ ] Create basic project structure and folders
