@@ -7,7 +7,8 @@
 - [x] Set up Next.js 15 project with TypeScript (Date: 2025-07-27)
 - [x] Configure Tailwind CSS and PostCSS (Date: 2025-07-27)
 - [x] Install and configure shadcn/ui components (Date: 2025-07-27)
-- [ ] Set up Prisma with PostgreSQL schema
+- [x] Install and configure local PostgreSQL database (Date: 2025-07-27)
+- [x] Set up Prisma with local PostgreSQL database (Date: 2025-07-27)
 - [ ] Configure NextAuth.js with database sessions
 - [ ] Create basic project structure and folders
 - [ ] Set up development environment variables
@@ -25,8 +26,9 @@
 
 2. **Database & API Foundation**
 
+   - [ ] Install and configure local PostgreSQL
    - [ ] Design core database schema (User, Profile, etc.)
-   - [ ] Set up Prisma migrations
+   - [ ] Set up Prisma migrations with local database
    - [ ] Create API routes for user management
    - [ ] Add Zod validation schemas
    - [ ] Implement error handling patterns
@@ -48,8 +50,9 @@
 5. **Infrastructure & Deployment**
 
    - [ ] Configure AWS Amplify deployment
-   - [ ] Set up environment variables for staging/production
-   - [ ] Configure S3 for file uploads
+   - [ ] Set up Neon PostgreSQL for staging/production
+   - [ ] Configure environment variables for different environments
+   - [ ] Set up S3 for file uploads
    - [ ] Set up AWS SES for email notifications
 
 6. **Testing & Quality**

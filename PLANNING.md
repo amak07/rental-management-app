@@ -93,9 +93,9 @@ src/
 
 ## Development Workflow
 
-- **Local**: `localhost:3000` with dev database
-- **Staging**: AWS Amplify `develop` branch
-- **Production**: AWS Amplify `main` branch
+- **Local**: `localhost:3000` with local PostgreSQL database
+- **Staging**: AWS Amplify `develop` branch with Neon staging database
+- **Production**: AWS Amplify `main` branch with Neon production database
 
 ## Key Constraints & Guidelines
 
