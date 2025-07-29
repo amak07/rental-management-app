@@ -266,7 +266,6 @@ export const authOptions: NextAuthOptions = {
    */
   pages: {
     signIn: '/auth/signin',     // Custom sign-in page
-    signUp: '/auth/signup',     // Custom sign-up page (will create later)
     error: '/auth/error',       // Custom error page
     // verifyRequest: '/auth/verify-request', // Email verification page
     // newUser: '/auth/new-user' // New user welcome page

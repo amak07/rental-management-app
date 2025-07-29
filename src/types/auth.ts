@@ -234,29 +234,29 @@ export interface ProtectedRouteProps {
 /**
  * Check if user has required role
  */
-export function hasRole(user: ExtendedUser | ExtendedSession['user'], role: UserRole): boolean {
-  return user.role === role
+export function hasRole(user: ExtendedUser | ExtendedSession['user'] | null | undefined, role: UserRole): boolean {
+  return user?.role === role
 }
 
 /**
  * Check if user has admin role
  */
-export function isAdmin(user: ExtendedUser | ExtendedSession['user']): boolean {
-  return user.role === 'ADMIN'
+export function isAdmin(user: ExtendedUser | ExtendedSession['user'] | null | undefined): boolean {
+  return user?.role === 'ADMIN'
 }
 
 /**
  * Check if user has landlord or admin role
  */
-export function isLandlordOrAdmin(user: ExtendedUser | ExtendedSession['user']): boolean {
-  return user.role === 'LANDLORD' || user.role === 'ADMIN'
+export function isLandlordOrAdmin(user: ExtendedUser | ExtendedSession['user'] | null | undefined): boolean {
+  return user?.role === 'LANDLORD' || user?.role === 'ADMIN'
 }
 
 /**
  * Check if session is valid and user is authenticated
  */
-export function isAuthenticated(session: ExtendedSession | null): session is ExtendedSession {
-  return session !== null && session.user !== undefined
+export function isAuthenticated(session: ExtendedSession | null | undefined): session is ExtendedSession {
+  return session !== null && session !== undefined && session.user !== undefined
 }
 
 /**
@@ -281,25 +281,4 @@ export interface AuthApiResponse extends ApiResponse {
   session?: ExtendedSession
 }
 
-/**
- * Export all types for easy importing
- */
-export type {
-  ExtendedUser,
-  ExtendedSession,
-  ExtendedJWT,
-  UserRole,
-  AuthError,
-  AuthProvider,
-  LoginCredentials,
-  RegisterData,
-  PasswordValidation,
-  RolePermissions,
-  SessionStatus,
-  OAuthAccountData,
-  UserProfileUpdate,
-  AuthContextType,
-  ProtectedRouteProps,
-  ApiResponse,
-  AuthApiResponse
-}
+// Types are already exported above, no need to re-export

@@ -33,11 +33,10 @@
 
 ## 🧪 Testing & Reliability
 
-- **Always create unit tests for new features** (components, API routes, utility functions).
-- **Use Jest and React Testing Library** for testing React components.
-- **Tests should live in `__tests__` folders** or `.test.ts` files next to the code.
-- **Include at least**: 1 test for expected use, 1 edge case, 1 failure case.
-- **Mock external services** (database, APIs) in tests.
+- **Follow the testing strategy** outlined in `TESTING.md` - focus on critical paths over comprehensive coverage.
+- **Always create tests for security-critical functions** (authentication, validation, permissions).
+- **Use type-safe test factories** to ensure schema changes break tests appropriately.
+- **Test behaviors, not implementations** - focus on what the code does, not how it does it.
 
 ## ✅ Task Completion
 

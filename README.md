@@ -45,6 +45,10 @@ Enterprise-grade rental management system built with Next.js 15 and TypeScript.
 | `npm run start` | Start production server |
 | `npm run lint` | Run ESLint |
 | `npm run type-check` | Run TypeScript type checking |
+| `npm test` | Run test suite |
+| `npm run test:watch` | Run tests in watch mode |
+| `npm run test:coverage` | Run tests with coverage report |
+| `npm run test:full` | Run TypeScript check + tests (recommended) |
 
 ## Project Structure
 

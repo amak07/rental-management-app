@@ -68,7 +68,7 @@
 - **TypeScript strict mode** - avoid `any` types
 - **File size limit**: 500 lines maximum per file
 - **Modular architecture** - clear separation of concerns
-- **Comprehensive testing** - unit tests for all business logic
+- **Pragmatic testing** - focus on critical paths and schema compatibility (see `TESTING.md`)
 - **Type-safe validation** - Zod schemas for all data
 
 ## Project Structure
